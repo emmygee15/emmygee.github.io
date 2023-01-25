@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div id="one"><h1>APPLICANTS INFORMATION FORM</h1></div>
+<style>
+  #one {
+background-color: #42dba9;
+  }
+  .InputBox{
+    background-color: #4A9ED9;
+  }
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+  }
+  input[type=date] {
+    width: 30%;
+  
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=number] {
+    width: 30%;
+
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit] {
+    width: 20%;
+    background-color: #2B823A;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #2B823A;
+  }
+  
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  @media only screen and (max-width :500px) {
+            .InputBox {
+                width: 100%;
+                padding: 0;
+            }
+            #one {
+                width: 100%;
+            }
+            div {
+                width: 100%;
+            }
+            h1{
+              width: 100%;
+            }
+        }
+       
+        @media only screen and (max-width :800px) {
+          .InputBox {
+                width: 100%;
+                padding: 0;
+            }
+            #one {
+                width: 100%;
+            }
+            div {
+                width: 100%;
+            }
+            h1{
+              width: 100%;
+            }
+        }
+  </style>
+</head>
+<h3>PERSONAL INFORMATION</h3>
+<form>
+<div class="InputBox">
+  <label for="Title">Title</label>
+    <select id="Title" name="Title">
+      <option value="MR">Mr</option>
+      <option value="MRS">Mrs</option>
+      <option value="MS">Ms</option>
+      <option value="MS">Doc</option>
+      <option value="MS">Hon</option>
+    </select>
+</div>
+<div class="InputBox">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+</div>
+<div class="InputBox">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  </div>
+  <div class="InputBox">
+    <label for="lname">Birth Date</label>
+    <input type="date" placeholder="Your Date of Birth..">
+  </div>
+  <div class="InputBox">
+    <label for="mstatus">Marital Status</label>
+    <input type="checkbox" name="Marital Status" required="required">
+     <span>Married</span> 
+     <input type="checkbox" name="Marital Status" required="required">
+     <span>Single</span> 
+   </div>
+
+    
+   
+  </form>
+</div>
+<h3>CONTACT INFORMATION</h3>
+<form>
+  <div class="InputBox">
+    <label for="mnumber">Mobile Number</label>
+    <input type="number" id="mnumber" name="mnumber" placeholder="Your phone number..">
+</div>
+<div class="InputBox">
+    <label for="Email">Email Address</label>
+    <input type="text" id="Email" name="Email" placeholder="Your Email..">
+</div>
+<div class="InputBox">
+  <label for="paddress">Physical Address</label>
+  <input type="text" id="paddress" name="paddress" placeholder="Your Address..">
+</div>
+  <div class="InputBox">
+    <label for="Hlong">How Long Have You Lived There</label>
+    <input type="text" placeholder="How long ..">
+  </div>
+  
+  <h3>EMPLOYMENT INFORMATION</h3>
+<form>
+  <div class="InputBox">
+    <label for="pemployer">Present Employer</label>
+    <input type="text" id="pemployer" name="pemployer" placeholder="Your present Employer..">
+</div>
+<div class="InputBox">
+    <label for="Occupation">Occupation</label>
+    <input type="text" id="Occupation" name="Occupation" placeholder="Your Occupation..">
+</div>
+<div class="InputBox">
+  <label for="Years">Years Of Experience</label>
+  <input type="number" id="Years" name="Years" placeholder="Your years of Experience..">
+</div>
+  <div class="InputBox">
+    <label for="Mincome">Gross Monthly Income</label>
+    <input type="text" placeholder="Monthly Income ..">
+  </div>
+  <input type="submit" value="Submit">
+  </html>

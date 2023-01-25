@@ -1,0 +1,133 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  #tab {
+    
+    font-size: 1.0em;
+    text-align: center;
+    font-family:  Times, serif;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:hsl(205, 65%, 47%);
+  
+  }
+  h3{
+    color: black;
+  }
+
+.vl {
+    border-right: 0.25em solid hsl(246,85%,100%);
+    height: 1.0em;
+    top: 0;
+  }
+ 
+  
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 1.2em;
+    background-color:hsl(205, 65%, 47%);
+  }
+  h2{
+    color: hsl(114,100%,15%);
+  }
+ 
+  h1, p {
+    margin: 0 0 1em 0;
+  }#head{
+    background-color:hsl(205, 65%, 47%);
+    padding: 20px;
+  }
+  table {
+    font-size: 1.5em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+  }
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    background-color:hsl(205, 65%, 47%);
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+   /* Responsive layout - makes a two column-layout instead of four columns */
+   @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  .wrapper {
+    margin: 0 20px;
+    display: grid;
+    grid-gap: 10px;
+  }
+  
+  @media screen and (min-width: 500px) {
+  
+    /* no grid support? */
+    .sidebar {
+      float: left;
+      width: 50%;
+    }
+  
+    .content {
+      float: right;
+      width: 50%;
+    }
+  
+    .wrapper {
+      margin: 0 auto;
+      grid-template-columns: 2fr 2fr;
+    }
+    
+    .header, .footer {
+      grid-column: 1 / -1;
+      /* needed for the floated layout */
+      clear: both;
+    }
+  
+  }
+  
+  .wrapper > * {
+    background-color:hsl(205, 65%, 47%);
+    border-radius: 5px;
+    padding: 20px;
+    /* needed for the floated layout*/
+    margin-bottom: 10px;
+  }
+  
+  /* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
+  @supports (display: grid) {
+    .wrapper > * {
+      width: auto;
+      margin: 0;
+    }
+}
